@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/TorMovies.png"/>
+    <title>TorMovies</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Algolia cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js"integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"/>
+
+    <!-- Algolia -->
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3.32.0/algoliasearchLite.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.25.1" defer></script>
+    <script src="/js/app.js" defer></script>
+
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/constant.css"/>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container py-1">
+            <a class="navbar-brand fw-bold text-primary" href="/" title="Home">TorMovies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about" title="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/request" title="Request">Request</a>
+                    </li>
+                </ul>
+                <div id="searchbox" class="searchbox"></div>
+                <div id="powered-by" class="my-2"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg py-3">
+                <div id="hits"></div>
+                <div id="pagination"></div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+</body>
+</html>

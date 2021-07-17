@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ 
+body,
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 1.6rem;
+}
+
+.nav-link{
+    padding: 1rem 0;
+}
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #dadada;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Selection */
+::selection {
+    color: white;
+    background: #9135e7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: white;
+    background: #9135e7; /* Gecko Browsers */
+}
